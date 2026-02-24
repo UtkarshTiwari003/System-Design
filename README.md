@@ -17,7 +17,7 @@ Quick reference to HLD design questions and their solutions. Read and understand
 - [CAP Theorem](https://www.hellointerview.com/learn/system-design/core-concepts/cap-theorem)
 - [Redis (caching)](https://www.hellointerview.com/learn/system-design/deep-dives/redis)
 - [Consistent Hashing](https://www.hellointerview.com/learn/system-design/core-concepts/consistent-hashing)
-- [Networking (fundamentals)]: (https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
+- [Networking (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
 - [API Design (REST)](https://www.hellointerview.com/learn/system-design/core-concepts/api-design)
 - [Database Modeling (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling)
 
