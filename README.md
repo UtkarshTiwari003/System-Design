@@ -1,6 +1,8 @@
 # System Design
 
-A collection of High Level Design (HLD) and Low Level Design (LLD) problems, solutions, and theoretical components.
+A collection of High Level Design (HLD) and Low Level Design (LLD) problems, solutions, and theoretical components. Theory can only take you so far! **PRACTICE**
+
+_Without pain, there is no gain - one has to earn the right to complain!_
 
 ---
 
@@ -9,6 +11,7 @@ A collection of High Level Design (HLD) and Low Level Design (LLD) problems, sol
 ### 🎯 [Questions](High%20Level%20Design/Questions)
 Quick reference to HLD design questions and their solutions. Read and understand other resources and GPT your way out. Read about deeper algorithms that may be employed, ex: locking (optimistic/ pessimistic), WAL, vector times etc.
 - [Design Ad-Click Aggregator](High%20Level%20Design/Questions/ad-click-aggregator-hld.md) **(sample - todo)**
+- [Design Bit.ly/ URL shortener (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/bitly)
 - [Design FB Live Comments (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-live-comments)
 - [Design AD Click Aggregator (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator)
 - [Design TicketMaster/ BookMyShow (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster)
@@ -20,7 +23,7 @@ Quick reference to HLD design questions and their solutions. Read and understand
 - [Networking (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
 - [API Design (REST)](https://www.hellointerview.com/learn/system-design/core-concepts/api-design)
 - [Database Modeling (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling)
-
+![key-components-to-know](image-1.png)
 ---
 
 ## Low Level Design (LLD)
