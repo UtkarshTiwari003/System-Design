@@ -7,7 +7,7 @@ _Without pain, there is no gain - one has to earn the right to complain!_
 ---
 
 ## High Level Design (HLD)
-
+![alt text](image-2.png)
 ### 🎯 [Questions](High%20Level%20Design/Questions)
 Quick reference to HLD design questions and their solutions. Read and understand other resources and GPT your way out. Read about deeper algorithms that may be employed, ex: locking (optimistic/ pessimistic), WAL, vector times etc.
 - [Design Ad-Click Aggregator](High%20Level%20Design/Questions/ad-click-aggregator-hld.md) **(sample - todo)**
@@ -23,7 +23,6 @@ Quick reference to HLD design questions and their solutions. Read and understand
 - [Networking (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
 - [API Design (REST)](https://www.hellointerview.com/learn/system-design/core-concepts/api-design)
 - [Database Modeling (fundamentals)](https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling)
-![key-components-to-know](image-1.png)
 ---
 
 ## Low Level Design (LLD)
