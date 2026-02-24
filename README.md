@@ -11,7 +11,7 @@ Quick reference to HLD design questions and their solutions. Read and understand
 - [Design Ad-Click Aggregator](High%20Level%20Design/Questions/ad-click-aggregator-hld.md) **(sample - todo)**
 - [Design FB Live Comments (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-live-comments)
 - [Design AD Click Aggregator (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator)
-- [Design TicketMaster/ BookMyShow](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster)
+- [Design TicketMaster/ BookMyShow (ref)](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster)
 
 ### 📚 [Components](High%20Level%20Design/Theoretical%20Components)
 - [CAP Theorem](https://www.hellointerview.com/learn/system-design/core-concepts/cap-theorem)
