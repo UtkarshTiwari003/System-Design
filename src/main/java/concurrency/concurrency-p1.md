@@ -14,9 +14,11 @@ public void accessDatabase() throws InterruptedException {
 }
 ```
 **What it solves?**
+
 Suppose 100 threads attempt DB access simultaneously. The database supports only 3 connections. Without control, system overload occurs. Semaphore enforces bounded concurrency.
 
 **Internal mechanism (conceptual view):**
+
 Semaphore is built on AbstractQueuedSynchronizer (AQS).
 Threads unable to acquire are parked (blocked) in a FIFO queue.
 When a permit is released, one waiting thread is unparked.
