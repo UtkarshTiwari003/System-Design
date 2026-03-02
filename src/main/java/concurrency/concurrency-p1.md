@@ -68,8 +68,6 @@ If the queue is **bounded** (e.g., capacity = 50):
 
 This stabilizes throughput by aligning production rate with consumption capacity.
 
----
-
 **Internal mechanism (conceptual view):**
 
 Taking `ArrayBlockingQueue` as an example:
