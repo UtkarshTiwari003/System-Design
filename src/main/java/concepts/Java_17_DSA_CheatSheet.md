@@ -504,3 +504,99 @@ public class PriorityQueueDemo {
 - Top-K and heap-based selection problems.
 
 **JVM reference note:** The heap is stored as an array of object references. Sift-up and sift-down operations move those references to restore heap order.
+
+
+---
+
+## Comparator
+
+`Comparator<T>` defines a custom ordering for objects. It is especially useful with `List.sort()`, `Collections.sort()`, and `PriorityQueue`.
+
+### 1. Simple Lambda
+
+For a simple comparison, the lambda can directly compare one field.
+
+```java
+import java.util.*;
+
+List<Integer> nums = new ArrayList<>(List.of(5, 2, 9, 1));
+
+// Ascending
+nums.sort((a, b) -> a - b);
+
+// Descending
+nums.sort((a, b) -> b - a);
+```
+
+A safer form for integers is `Integer.compare()` because subtraction can overflow:
+
+```java
+nums.sort((a, b) -> Integer.compare(a, b));
+nums.sort((a, b) -> Integer.compare(b, a));
+```
+
+### 2. Complex Comparator
+
+For objects, the comparison can use multiple fields and tie-breakers.
+
+```java
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+List<Person> people = new ArrayList<>(List.of(
+    new Person("Alice", 30),
+    new Person("Bob", 25),
+    new Person("Charlie", 30)
+));
+
+people.sort(
+    Comparator.comparingInt((Person p) -> p.age)
+              .thenComparing(p -> p.name)
+);
+```
+
+This sorts by:
+
+1. `age` ascending.
+2. If ages are equal, `name` ascending.
+
+For descending order:
+
+```java
+people.sort(
+    Comparator.comparingInt((Person p) -> p.age)
+              .reversed()
+              .thenComparing(p -> p.name)
+);
+```
+
+### 3. Comparator with `PriorityQueue`
+
+The same comparator idea can define the priority order of a heap.
+
+```java
+// Min-heap by age
+PriorityQueue<Person> pq =
+    new PriorityQueue<>(Comparator.comparingInt(p -> p.age));
+
+// Max-heap by age
+PriorityQueue<Person> maxPq =
+    new PriorityQueue<>(
+        Comparator.comparingInt((Person p) -> p.age).reversed()
+    );
+```
+
+**Mental model:** `Comparator` answers one question: **"Should `a` come before `b`?"**
+
+```text
+compare(a, b) < 0  -> a comes before b
+compare(a, b) == 0 -> a and b are equivalent in ordering
+compare(a, b) > 0  -> b comes before a
+```
